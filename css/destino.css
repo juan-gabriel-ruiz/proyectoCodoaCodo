@@ -1,4 +1,16 @@
 
+
+section  .contenedorH1Titulo{
+  padding: 2px;
+  background: aquamarine;
+  margin: 5px;
+}
+h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #300aa3;
+} 
 .contenedor{
   padding:0;
 width:100%;
