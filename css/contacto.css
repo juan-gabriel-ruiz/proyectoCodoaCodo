@@ -80,15 +80,18 @@ h1{
 	font-size: 39px;  
 	text-align: center; 
 	padding-bottom: 20px; 
-	color: #300aa3;
+	color: black;
 }
 
 
 
-h3{
-	font-size: 16px; 
-	padding-bottom: 30px;
-	color: #0e0e0e;   
+h3{ 
+	font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
+    display: block;
+    margin: 2em;
+    margin-inline-end: 20px; 
 }
 
 
@@ -118,4 +121,6 @@ p{
 	outline:0;
 	border: 1px solid #97d848;
 }
+
+
 

@@ -1,0 +1,34 @@
+.contenidoInicio{ 
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 960px;
+    max-width: 100%;
+}
+article {
+    /*float: left;*/
+    width: 720px;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+
+h5{
+    margin: 4em;
+}
+
+
+@media only screen and (max-width: 960px) {
+    .contenidoIniciio{ 
+        padding: 2rem 0;
+    }
+   /* }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    article:last-of-type {  
+        margin-bottom: 3rem;
+
+}
+    

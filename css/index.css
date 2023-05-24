@@ -8,7 +8,7 @@ header {
 }
 .Inicio {
     background-color: #333;
- background-image: url(/imagenes/viajesMundo.jpg);
+    background-image: url(/airplane-7429725_1920.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +63,7 @@ nav ul {
 nav ul li { 
     display: inline-block; 
     line-height: 60px;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 nav ul li a {
     text-decoration: none; 
@@ -73,42 +73,9 @@ nav ul li a {
 /* demo content */
 body { 
     color: #292f36;
+    background-color: #beebff;
     font-family: helvetica;
     line-height: 1.6;
 }
-.contenidoInicio{ 
-    margin: 0 auto;
-    padding: 4rem 0;
-    width: 960px;
-    max-width: 100%;
-}
-article {
-    /*float: left;*/
-    width: 720px;
-}
-article p:first-of-type {
-    margin-top: 0;
-}
-aside {
-    float: right;
-    width: 120px;
-}
-p img {
-    max-width: 100%;
-}
 
-@media only screen and (max-width: 960px) {
-    .contenidoIniciio{ 
-        padding: 2rem 0;
-    }
-    article {
-        float: none;
-        margin: 0 auto;
-        width: 96%;
-    }
-    article:last-of-type {  
-        margin-bottom: 3rem;
-
-}
-}
 
