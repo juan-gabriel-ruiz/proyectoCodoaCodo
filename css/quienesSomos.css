@@ -4,6 +4,14 @@
     width: 960px;
     max-width: 100%;
 }
+h1{
+	font-size: 39px;  
+	text-align: center; 
+	padding-bottom: 20px; 
+	color: black;
+}
+
+
 article {
     /*float: left;*/
     width: 720px;

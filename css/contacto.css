@@ -1,5 +1,5 @@
 .contact_form{	
-	width: 460px; 
+	width: px; 
   height: auto;
   margin: 80px auto;
 	border-radius: 10px;  
@@ -9,10 +9,9 @@
   padding-left: 30px; 
 }
 
-
-input{
+ input{
 	background-color: #fbfbfb; 
-	width: 408px; 
+	width: 90%; 
 	height: 40px; 
 	border-radius: 5px;  
 	border-style: solid; 
@@ -21,12 +20,12 @@ input{
 	margin-top: 10px;  
 	padding-left: 10px;
   margin-bottom: 20px; 
-}
+} 
 
 
 textarea{
   background-color: #fbfbfb; 
-	width: 405px; 
+	width: 90%; 
 	height: 150px; 
 	border-radius: 5px;  
 	border-style: solid; 
@@ -56,7 +55,7 @@ button{
 	border-color: #ab4493; 
 	border-style: solid; 
 	border-radius: 10px;	
-	width: 420px;   
+	width: 90%;    
   cursor: pointer;
 }
 
