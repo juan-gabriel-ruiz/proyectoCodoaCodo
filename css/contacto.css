@@ -120,6 +120,12 @@ p{
 	outline:0;
 	border: 1px solid #97d848;
 }
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
 
 
 
