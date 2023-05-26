@@ -4,6 +4,17 @@
     width: 960px;
     max-width: 100%;
 }
+.flex-container{
+    border: 10px solid black;
+    background: #80eaf17a;
+    padding: 50px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    display:  flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+}
 h1{
 	font-size: 39px;  
 	text-align: center; 
