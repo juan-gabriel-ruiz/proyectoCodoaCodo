@@ -12,6 +12,7 @@ form.addEventListener('submit', (e) => {
     }
 
     callAPI(nameCity.value, nameCountry.value);
+<<<<<<< HEAD
 });
 
 function callAPI(city, country) {
@@ -36,11 +37,46 @@ function callAPI(city, country) {
 
 function showWeather(data) {
     const { name, main: { temp, temp_min, temp_max }, weather: [arr] } = data;
+=======
+    //console.log(nameCity.value);
+    //console.log(nameCountry.value);
+})
+
+function callAPI(city, country){
+    const apiId = '41d1d7f5c2475b3a16167b30bc4f265c';
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiId}`;
+
+    fetch(url)
+        .then(data => {
+            return data.json();
+        })
+        .then(dataJSON => {
+            if (dataJSON.cod === '404') {
+                showError('Ciudad no encontrada...');
+            } else {
+                clearHTML();
+                showWeather(dataJSON);
+            }
+            //console.log(dataJSON);
+        })
+        .catch(error => {
+            console.log(error);
+        })
+}
+
+function showWeather(data){
+    const {name, main:{temp, temp_min, temp_max}, weather:[arr]} = data;
+
+    const degrees = kelvinToCentigrade(temp);
+    const min = kelvinToCentigrade(temp_min);
+    const max = kelvinToCentigrade(temp_max);
+>>>>>>> 66c18a324628bd1c4f59938c31bdcb565cfceb6e
 
     const content = document.createElement('div');
     content.innerHTML = `
         <h5>Clima en ${name}</h5>
         <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="icon">
+<<<<<<< HEAD
         <h2>${parseInt(temp)}°C</h2>
         <p>Max: ${parseInt(temp_max)}°C</p>
         <p>Min: ${parseInt(temp_min)}°C</p>
@@ -50,6 +86,24 @@ function showWeather(data) {
 }
 
 function showError(message) {
+=======
+        <h2>${degrees}°C</h2>
+        <p>Max: ${max}°C</p>
+        <p>Min: ${min}°C</p>
+    `;
+
+    result.appendChild(content);
+
+    /* console.log(name);
+    console.log(temp);
+    console.log(temp_max);
+    console.log(temp_min);
+    console.log(arr.icon); */
+}
+
+function showError(message){
+    //console.log(message);
+>>>>>>> 66c18a324628bd1c4f59938c31bdcb565cfceb6e
     const alert = document.createElement('p');
     alert.classList.add('alert-message');
     alert.innerHTML = message;
@@ -60,6 +114,14 @@ function showError(message) {
     }, 3000);
 }
 
+<<<<<<< HEAD
 function clearHTML() {
+=======
+function kelvinToCentigrade(temp){
+    return parseInt(temp - 273.15);
+}
+
+function clearHTML(){
+>>>>>>> 66c18a324628bd1c4f59938c31bdcb565cfceb6e
     result.innerHTML = '';
 }
